@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartao credito</title>
+    <link href="cartao.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="cartao">
+            <div id="logo">
+                <img src="photos/Bandeiras cartão.png" alt="logo visa" id="imgVisa">
+                <img src="photos/Vector.png" alt="icone aproximação" id="aproximacao">
+            </div>
+            <div id="numeroCartao">
+                <div id="bola">
+                    <span id="1">•</span>
+                    <span id="2">•</span>
+                    <span id="3">•</span>
+                    <span id="4">•</span>
+                </div>
+                <div id="bola">
+                    <span id="5">•</span>
+                    <span id="6">•</span>
+                    <span id="7">•</span>
+                    <span id="8">•</span>
+                </div>
+                <div id="bola">
+                    <span id="9">•</span>
+                    <span id="10">•</span>
+                    <span id="11">•</span>
+                    <span id="12">•</span>
+                </div>
+                <div id="bola">
+                    <span id="13">•</span>
+                    <span id="14">•</span>
+                    <span id="15">•</span>
+                    <span id="16">•</span>
+                </div>
+            </div>
+            <div id="nomeValidade">
+                <span id="nome">Seu nome aqui</span>
+                <div id="validade">
+                    <span id="21">•</span>
+                    <span id="22">•</span>
+                    <span>/</span>
+                    <span id="23">•</span>
+                    <span id="24">•</span>
+                </div>
+            </div>
+            <span id="mensagem"><img src="photos/ShieldCheck.png" alt="escudo sinalizando segurança">Seus dados estão seguros</span>
+        </section>
+        <form id="formulario">
+            <label for="inserirNum" id="numCartao"> <p>Número do cartão</p>
+                <input type="text" id="inserirNum" name="inserirNum" placeholder="Digite o número do cartão" minlength="16" maxlength="20">
+            </label>
+            <label for="inserirTitular" id="nomeTitular"><p>Nome do títular</p>
+                <input type="text" id="inserirTitular" name="inserirTitular" placeholder="Nome como está no cartão">
+            </label>
+            <div id="validadeCW">
+                <label for="inserirValidade" id="validade"><p>Validade</p>
+                    <input type="text" id="inserirValidade" name="inserirValidade" placeholder="mm/aa" minlength="4" maxlength="4">
+                </label>
+                <label for="codigoSeguranca" id="codigo"><p>cw <img src="photos/Question.png"></p>
+                    <input type="number" id="codigoSeguranca" name="codigoSeguranca" placeholder="•••">
+                </label>
+            </div>
+        </form>
+    </main>
+    <button type="submit" form="formulario" value="formulario" id="registrar">Adicionar cartão</button>
+    <script src="cartao.js"></script>
+</body>
+</html>

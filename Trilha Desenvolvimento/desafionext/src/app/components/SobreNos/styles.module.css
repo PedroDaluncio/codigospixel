@@ -1,0 +1,80 @@
+.sobreNos{
+    display: inline-block
+}
+
+.sobreNos span{
+    color: rgba(250, 132, 0, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.Texto p::first-letter{
+    margin-left: 50px;
+}
+
+.Texto, .TextoImagem,.fotoLugar{
+    width: 95vw;
+    max-width: 95vw;
+    text-align: left;
+}
+
+.fotoLugar {
+    margin-bottom: 15px;
+}
+
+@media(min-width: 400px) and (max-width: 599px){
+    .sobreNos span{
+        font-size: 22px;
+    }
+    .Texto{
+        font-size: 19px;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 700px){
+    .sobreNos span{
+        font-size: 25px;
+    }
+    .Texto{
+        font-size: 22px;
+    }
+}
+
+@media(min-width: 701px) and (max-width: 1100px){
+    .sobreNos span{
+        font-size: 25px;
+    }
+    .Texto{
+        font-size: 22px;
+    }
+    .TextoImagem{
+        display: flex;
+        flex-direction: row;
+    }
+    .fotoLugar{
+        margin-top: 22px;
+        width: 50vw;
+    }
+}
+
+@media(min-width: 1101px){
+    .sobreNos span{
+        font-size: 25px;
+    }
+    .Texto{
+        font-size: 20px;
+        line-height: 32px;
+        max-width: 692px;
+        width: 692px;
+    }
+    .TextoImagem{
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .fotoLugar{
+        margin-top: 22px;
+        max-width: 40vw;
+    }
+}

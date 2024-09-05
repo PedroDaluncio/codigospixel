@@ -1,0 +1,240 @@
+html{
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #1A1924;
+    margin: 24px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    height: fit-content;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #E1E1E6;
+}
+
+#topoChat {
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20vh;
+    max-height: 20vh;
+    margin-bottom: 26px;
+}
+
+#foto {
+    margin-right: 26px
+}
+
+#nome {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#status {
+    color: #00B37E;
+}
+#status img {
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+}
+
+#nomeStatus {
+    width: 211px;
+    margin-top: 5px;
+    margin-right: 16px;
+}
+
+p{
+    margin: 0;
+}
+
+#lugarMensagens {
+    width: 100vw;
+    max-width: 100vw;
+    height: 50vh;
+    max-height: 50vh;
+    overflow: auto;
+}
+
+#horarioBatePapo {
+    margin-bottom: 30px;
+}
+
+#MensagensDela {
+    width: 311px;
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+#nomeHorario {
+    margin-bottom: 10px;
+}
+
+#MensagemDela {
+    width: 149px;
+    height: fit-content;
+    background-color: #633BBC;
+    padding: 14px;
+    border-radius: 0 8px 8px 8px;
+}
+
+#MensagensEu {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#MensagemMinha{
+    width: fit-content;
+    max-width: 149px;
+    height: fit-content;
+    background-color: #07847E;
+    padding: 14px;
+    border-radius: 8px 8px 0 8px;
+}
+
+#novaMensagem{
+    display: inline-block;
+    width: inherit;
+    max-width : 40ch;
+    word-wrap : break-word;
+}
+
+#DigitarMensagem {
+   margin-top: 24px;
+   border-radius: 999px;
+   background-color: #282843;
+   width: 311px;
+   height: fit-content;
+   padding: 14px 24px;
+   display: flex;
+   justify-content: space-between;
+}
+
+#escreverMensagem {
+    border: none;
+    background: none;
+    font-size: 15px;
+    color: #E1E1E6;
+    width: 250px;
+}
+#escreverMensagem:focus{
+    outline: none;
+}
+
+#enviar{
+    background: none;
+    border: none;
+}
+
+@media (min-width:376px) and (max-width: 500px){
+    body,#nome,#escreverMensagem{
+        font-size: 18px;
+        margin-left: 10px;
+    }
+}
+@media (min-width:501px) and (max-width: 700px){
+    body{
+        margin-left: 10px;
+    }
+    body,#nome,#escreverMensagem{
+        font-size: 18px;
+    }
+    body,#topoChat,#lugarMensagens,#MensagensDela#MensagensEu{
+        width: 580px;
+    }
+    #nomeStatus,#DigitarMensagem,#escreverMensagem{
+        width: 450px;
+    }
+    #MensagemDela{
+        width: 292px;
+    }
+    #MensagemMinha{
+        max-width: 292px;
+    }
+}
+
+@media (min-width:701px) and (max-width: 800px){
+    body{
+        margin-left: 10px;
+    }
+    body,#nome,#escreverMensagem{
+        font-size: 20px;
+    }
+    body,#topoChat,#lugarMensagens,#MensagensDela#MensagensEu{
+        width: 720px;
+    }
+    #nomeStatus,#DigitarMensagem,#escreverMensagem{
+        width: 630px;
+    }
+    #MensagemDela{
+        width: 452px;
+    }
+    #MensagemMinha{
+        max-width: 452px;
+    }
+    #DigitarMensagem{
+        transform: translateY(290px);
+    }
+}
+
+@media (min-width:801px) and (max-width: 1000px){
+    body{
+        margin-left: 10px;
+    }
+    body,#nome,#escreverMensagem{
+        font-size: 20px;
+    }
+    body,#topoChat,#lugarMensagens,#MensagensDela#MensagensEu{
+        width: 800px;
+    }
+    #nomeStatus,#DigitarMensagem,#escreverMensagem{
+        width: 770px;
+    }
+    #MensagemDela{
+        width: 452px;
+    }
+    #MensagemMinha{
+        max-width: 452px;
+    }
+    #DigitarMensagem{
+        transform: translateY(290px);
+    }
+}
+
+@media (min-width:1001px){
+    body{
+        margin-left: 40px;
+    }
+    body,#nome,#escreverMensagem{
+        font-size: 20px;
+    }
+    body,#topoChat,#lugarMensagens,#MensagensDela#MensagensEu{
+        width: 1100px;
+    }
+    #nomeStatus,#DigitarMensagem,#escreverMensagem{
+        width: 1100px;
+    }
+    #MensagemDela{
+        width: 600px;
+    }
+    #MensagemMinha{
+        max-width: 600px;
+    }
+}

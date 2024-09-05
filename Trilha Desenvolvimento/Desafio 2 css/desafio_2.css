@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-top: 8px;
+    margin-bottom: 1px;
+}
+
+#em_pe {
+    width: 267px;
+    height: 498px;
+    border-radius: 9.6px;
+    background-color: #2A2141;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+#em_pe img {
+    height: 189px;
+    width: 189px;
+    border-radius: 6px;
+}
+
+#Nome_Musica {
+    font-family: "Roboto", sans-serif;
+    width: 171px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #E1E1E6;
+    margin-right: 20px;
+}
+
+#Nome_Banda {
+    width: 155px;
+    height: 19px;
+    font-family:"Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 19px;
+    color: rgba(225, 225, 230, 0.8);
+    margin-right: 40px;
+    transform: translateY(-20px);
+}
+
+#em_pe .botoes {
+    width: 189px;
+    height: 28px;
+}
+
+.barra_tempo {
+    height: 6px;
+    width: 189px;
+    background-color: rgba(217, 217, 217, 0.3);
+    border-radius: 9.6px;
+    margin: 10px;
+}
+
+.barra_tempo div{
+    width: 165px;
+    background-color: rgba(217, 217, 217, 1);
+    height: inherit;
+    border-radius: inherit;
+
+}
+
+#primeiro_player  {
+    height: 23px;
+    width: 189px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    margin-right: 38px;
+    color: rgba(196, 196, 204, 1);
+}
+
+#deitados {
+    width: 358px;
+    height: 498px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#deitado_com_tempo{
+    width: 358px;
+    height: 266px;
+    border-radius: 9.6px;
+    background-color: #2A2141;
+}
+
+#container {
+    width: 300px;
+    height: 84px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.musica {
+    width: 84px;
+    height: 84px;
+    border-radius: 6px;
+}
+
+#Nomes {
+    width: 190px;
+    height: 70px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Nome_Musica_Deitado {
+    width: 171px;
+    height: 24px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: rgba(225, 225, 230, 1);
+}
+
+#Nome_Banda_Deitado {
+    width: 155px;
+    height: 19px;
+    margin-right: 12px;
+    font-family: "Roboco",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: rgba(225, 225, 230, 0.8);
+}
+
+.botoes {
+    width: 260px;
+    height: 25px;
+}
+
+.barra_tempo_deitado {
+    height: 6px;
+    width: 300px;
+    background-color: rgba(217, 217, 217, 0.3);
+    border-radius: 9.6px;
+    margin: 25px 0 0 20px;
+}
+
+.barra_tempo_deitado div{
+    width: 261px;
+    background-color: rgba(217, 217, 217, 1);
+    height: inherit;
+    border-radius: inherit;
+}
+
+#segundo_player  {
+    height: 23px;
+    width: 300px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(196, 196, 204, 1);
+}
+
+#deitado_sem_tempo{
+    width: 357px;
+    height: 199px;
+    border-radius: 9.6px;
+    background-color: #2A2141;
+}
+
+.botoes_ultimo{
+    margin-top: 10px;
+    width: 250px;
+    height: 23px;
+}
+
+@media (min-width: 357px) and (max-width:650px){
+    body {
+        flex-direction: column;
+        padding: 0;
+    }
+    #em_pe {
+        margin: 0 0 20px 0;
+    }
+}
+@media (min-width: 666px) and (max-width: 800px){
+    body {
+        flex-direction: column;
+        padding: 0;
+    }
+    #em_pe {
+        margin: 0 0 20px 0;
+    }
+}
+@media (min-width:819px) and (max-width:1000px){
+    body {
+        flex-direction: column;
+        padding: 0;
+    }
+    #em_pe {
+        margin: 0 0 20px 0;
+    }
+}
+@media (min-width: 280px) and (max-width: 300px) and (min-height:650px) {
+    body {
+        flex-direction: column;
+        padding: 0;
+    }
+    #deitados {
+        width: 280px;
+    }
+
+    #em_pe {
+        margin: 0 0 20px 0;
+    }
+    #deitado_com_tempo {
+        width: 280px;
+    }
+    #deitado_sem_tempo {
+        width: 280px;
+    }
+    .barra_tempo_deitado {
+        width: 280px;
+        margin: 25px 0 0 0;
+    }
+
+    .barra_tempo_deitado div{
+        width: 261px;
+    }
+    #segundo_player  {
+        width: 280px;
+        padding-left: 0px;
+    }
+    #Nomes {
+        margin-left: 0;
+    }
+    #Nome_Musica_Deitado {
+        font-size: 20px;
+    }
+    .botoes {
+        width: 200px;
+    }
+    .botoes_ultimo{
+        width: 230px;
+    }
+}

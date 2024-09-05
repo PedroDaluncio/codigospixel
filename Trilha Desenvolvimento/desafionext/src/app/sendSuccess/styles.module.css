@@ -1,0 +1,26 @@
+.box{
+    background-color: rgba(223, 223, 228, 1);
+    width: 70vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(2, 48, 71, 1);
+    margin-left: 50px;
+}
+
+.title{
+    text-align: center;
+    font-size: 20px;
+}
+
+@media(min-width: 700px){
+    .box{
+        margin: 0px;
+        width: 60vw;
+    }
+    .title{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,21 @@
+const ondeColocar = document.getElementById("lugarMensagens");
+const enviar = document.getElementById("DigitarMensagem");
+enviar.addEventListener("submit",(event)=>{
+    event.preventDefault();
+    const novaCaixaMensagem = document.createElement("section");
+    const nomeHorario = document.createElement("p");
+    const novaMensagem = document.createElement("div");
+    const pegarMensagem = document.getElementById("escreverMensagem");
+    const mensagem = document.createElement("span");
+    mensagem.id = "novaMensagem";
+    novaMensagem.id = "MensagemMinha";
+    nomeHorario.id = "nomeHorario";
+    mensagem.innerText = pegarMensagem.value;
+    nomeHorario.innerText = "Você-11:51";
+    novaCaixaMensagem.id = "MensagensEu";
+    novaMensagem.appendChild(mensagem);
+    novaCaixaMensagem.appendChild(nomeHorario);
+    novaCaixaMensagem.appendChild(novaMensagem);
+    ondeColocar.appendChild(novaCaixaMensagem);
+    pegarMensagem.value = "";
+});

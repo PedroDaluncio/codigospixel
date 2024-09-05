@@ -1,0 +1,12 @@
+.footer{
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.linha{
+    width: 100vw;
+    color: rgba(223, 223, 228, 1);
+    margin-bottom: 20px;
+}

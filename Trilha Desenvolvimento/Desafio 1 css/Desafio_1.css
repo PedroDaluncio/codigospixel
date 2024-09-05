@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: "Outfit", 'Times New Roman', Times, serif;
+    background-image: url(Background.png);
+    background-size: cover;
+}
+
+main {
+    width: 1000px;
+    height: 600px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Texto {
+    width: 380px;
+    height: 276px;
+}
+
+.Imagem {
+    width: 406px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: bold;
+    color: #D6D6F2;
+    margin-bottom: 24px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 300;
+    color: #D6D6F2;
+    margin-bottom: 56px;
+}
+
+iframe {
+    width: 230px;
+    height: 230px;
+    margin-right: 8px;
+}
+
+h2 {
+    font-size: 212px;
+    color: #BF7BFB;
+    margin-right: 8px;
+}
+
+button {
+    background-color: #151557;
+    color: #E2E2F5;
+    border-radius: 999px;
+    border-style: none;
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+
+button:hover {
+    background-color: #212187;
+}
+
+#voltar {
+    width: 101px;
+    height: 44px;
+    margin-right: 16px;
+}
+
+#home {
+    width: 155px;
+    height: 44px;
+}
+
+@media (min-width:700px) and (max-width: 1000px){
+    main {
+        flex-direction: column-reverse;
+    }
+    .Texto {
+        transform: translateY(-50px);
+    }
+}
+
+@media (min-width: 400px) and (max-width: 700px){
+    main {
+        flex-direction: column-reverse;
+        margin-left: px;
+    }
+    .Texto {
+        transform: translateY(-100px);
+    }
+    h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    p {
+        font-size: 22px;
+        text-align: justify;
+    }
+    button {
+        margin-left: 35px;
+    }
+    h2 {
+        font-size: 90px;
+    }
+    br {
+        display: none;
+    }
+}
+
+@media (max-width: 400px){
+    main {
+        flex-direction: column-reverse;
+        margin-left: px;
+    }
+    .Texto {
+        transform: translateY(-100px);
+    }
+    h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    p {
+        font-size: 18px;
+        text-align: center;
+    }
+    button {
+        margin-left: 35px;
+    }
+    h2 {
+        font-size: 90px;
+    }
+    br {
+        display: none;
+    }
+}

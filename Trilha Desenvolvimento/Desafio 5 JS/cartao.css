@@ -1,0 +1,240 @@
+body {
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0 0 0 ;
+    font-family: "Source Sans",Arial, Helvetica, sans-serif;
+    background-color: #111827;
+}
+
+#cartao {
+    width: 300px;
+    height: 140px;
+    background-image: url("photos/creditCard.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    margin-bottom: 48px;
+    padding-top: 30px;
+}
+
+#bola, #validade {
+    color: rgba(259,250,251,1);
+}
+
+#logo {
+    transform: translateY(-20px);
+    width: 232px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#imgVisa {
+    width: 32px;
+    height: 32px;
+}
+
+#aproximacao {
+    width: 24px;
+    height: 24px;
+}
+
+#numeroCartao, #nomeValidade {
+    width: 232px;
+    height: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#numeroCartao {
+    margin-bottom: 40px;
+}
+
+#nome{
+    color: rgba(249,250,251,0.5);
+    font-weight: 400;
+    width: 159px;
+    font-size: 12px;
+}
+
+p {
+    margin: 0;
+    color: #E5E7EB;
+}
+
+#formulario {
+    display: block;
+    color: #9CA3AF;
+    margin-bottom: 100px;
+}
+
+#paragrafoErro {
+    margin: 0;
+    display: inline;
+    width: 230px;
+    height: 16px;
+}
+
+#inserirNum, #inserirTitular{
+    width: 310px;
+    height: 48px;
+    border: 1px solid #374151;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    background-color: #111827;
+    padding-left: 10px;
+    transition: border-color 1s;
+    color: #F3F4F6;
+}
+
+#validadeCW{
+    width: 320px;
+    height: 68px;
+    display: flex;
+    margin-bottom: 48px;
+}
+
+#inserirValidade {
+    width: 152px;
+    height: 48px;
+    border: 1px solid #374151;
+    border-radius: 4px;
+    background-color: #111827;
+    margin-right: 16px;
+    padding-left: 10px;
+    transition: border-color 1s;
+    color: #F3F4F6;
+}
+
+#codigoSeguranca {
+    width: 115px;
+    height: 48px;
+    border: 1px solid #374151;
+    border-radius: 4px;
+    background-color: #111827;
+    padding-left: 10px;
+    transition: border-color 1s;
+    color: #F3F4F6;
+}
+
+#mensagem {
+    font-size: 14px;
+    color: #E5E7EB;
+    transform: translateY(370px);
+}
+#mensagem img{
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+#registrar {
+    width: 327px;
+    height: 56px;
+    background-color: #9333EA;
+    color: #F9FAFB;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+}
+
+#inserirNum:hover,#inserirTitular:hover,#inserirValidade:hover,#codigoSeguranca:hover{
+    border: 1.5px solid #4B5563;
+}
+
+#inserirNum:focus,#inserirTitular:focus,#inserirValidade:focus,#codigoSeguranca:focus{
+    outline: none;
+    border: 1.5px solid #9333EA;
+}
+
+#mensagemErro{
+    font-size: 14px;
+    display: block;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 380px) and (max-width: 720px) {
+    body{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    #inserirNum,#inserirTitular,#inserirValidade,#codigoSeguranca,#registrar,#mensagem{
+        font-size: 18px;
+    }
+    #cartao {
+        width: 310px;
+        height: 150px;
+    }
+    #mensagem {
+        transform: translateY(415px);
+    }
+}
+
+@media(min-width: 720px) and (max-width: 1000px){
+    body{
+        width: 700px;
+        font-size: 20px;
+    }
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        width: inherit;
+        justify-content: space-between;
+        margin-left: 32px;
+    }
+    #cartao {
+        width: 310px;
+        height: 165px;
+        transform: translateY(15px);
+    }
+    #inserirNum,#inserirTitular,#inserirValidade,#codigoSeguranca,#registrar,#mensagem{
+        font-size: 18px;
+    }
+    #mensagem{
+        transform: translateY(65px);
+    }
+    #registrar{
+        width: 668px;
+    }
+}
+
+@media(min-width: 1000px){
+    body{
+        width: 1000px;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+    }
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        width: inherit;
+        justify-content: center;
+    }
+    #cartao {
+        width: 310px;
+        height: 165px;
+        transform: translateY(15px);
+        margin-left: 40px;
+    }
+    #inserirNum,#inserirTitular,#inserirValidade,#codigoSeguranca,#registrar,#mensagem{
+        font-size: 22px;
+    }
+    #mensagem{
+        transform: translateY(65px);
+    }
+    #registrar{
+        width: 668px;
+    }
+}

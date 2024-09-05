@@ -1,0 +1,24 @@
+.valorComprar{
+    width: 300px;
+    align-items: center;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comprar{
+    background-color: rgba(250, 132, 0, 1);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.comprar:hover{
+    background-color:rgba(209, 111, 0, 1);
+}
+
+@media(min-width: 700px){
+    .valorComprar{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+    <link rel="stylesheet" href="desafio_4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Roboto:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main id="conteudo">
+        <img src="fotos/logo.png" id="logo" alt="logo da Vertigo">
+        <section>
+            <h1>Acesse a plataforma</h1>
+            <span id="texto">Faça login ou registre-se para começar a construir seus projetos ainda hoje.</span>
+            <form id="login">
+                <label for="email" id="caixaEmail"><p>E-mail</p>
+                    <input id="email" username="email" type="email" placeholder="Digite seu e-mail">
+                </label>
+                <label for="senha">
+                    <div id="ajustarSenhas">
+                        <span id="mensagemSenha">Senha</span>
+                        <span id="esqueceu">Esqueceu a senha?</span>
+                    </div>
+                    <div id="caixaSenha">
+                        <input id="senha" username="senha" type="password" placeholder="Digite sua senha">
+                        <button id="ocultar"><img src="fotos/eye-off.svg" alt="senhaEscondida" id="senhaEscondida"></button>
+                    </div>
+                </label>
+                <button id="entrar">Entrar</button>
+            </form>
+            <div id="cadastrar">Ainda não tem uma conta? <span id="inscrever">Inscreva-se</span></div>
+        </section>
+    </main>
+    <img src="fotos/fundo.png" alt="Curvy Blue Waves" id="imagem">
+    <script src="desafio_4.js"></script>
+</body>
+</html>

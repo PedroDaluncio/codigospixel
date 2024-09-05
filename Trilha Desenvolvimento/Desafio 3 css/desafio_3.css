@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+}
+
+html {
+    width: auto;
+    height: auto;
+}
+
+
+#cima {
+    width: 100%;
+    height: 439px;
+    background-color: #FEECE0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#baixo {
+    width: 100%;
+    height: 439px;
+    background-color: #9B6647;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pamonha {
+    width: 293px;
+    height: 409px;
+}
+
+h1 {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0;
+    color: #58190A;
+}
+
+h2 {
+    font-family: serif;
+    font-weight: normal;
+    font-size: 28px;
+    margin: 0;
+    color: #58190A;
+}
+
+#caixa_botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 282px;
+    height: 32px;
+}
+
+h3 {
+    font-family: serif;
+    font-weight: normal;
+    font-size: 25px;
+    color: #9B6647;
+}
+
+.diminui {
+    background: url(diminui.svg);
+    width: 32px;
+    height: 32px;
+    border: none;
+    margin: 15px;
+}
+
+.aumenta {
+    background: url(aumenta.svg);
+    width: 32px;
+    height: 32px;
+    border: none;
+    margin: 15px;
+}
+
+#qt_ingredientes {
+    width: auto;
+    height: auto;
+}
+
+#modo_preparo {
+    width: auto;
+    height: auto;
+    max-height: 439px;
+}
+
+#cesta , #panela {
+    width: 35px;
+    height: 32px;
+}
+
+span {
+    width: 299px;
+    height: 25px;
+    color: #FEECE0;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+ul {
+    width: auto;
+    height: auto;
+    font-family: serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+ol {
+    width: auto;
+    height: auto;
+    font-family: serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+@media (min-width: 200px) and (max-width: 500px){
+    #baixo {
+        height: fit-content;
+    }
+    ul,ol {
+        font-size: 25px;
+        margin: 10px 0 10px 0 ;
+    }
+    h3 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 700px){
+    #cima {
+        flex-direction: row;
+        height: 23em;
+    }
+    .pamonha {
+        width: 409px;
+        height: 203px;
+    }
+    #legenda {
+        padding-left: 1em;
+    }
+    #baixo {
+        padding-left: 20px;
+    }
+    ul,ol {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 700px) and (max-width:1000px){
+    #cima {
+        flex-direction: row;
+        height: 23em;
+    }
+    #baixo {
+        height: fit-content;
+    }
+    .pamonha {
+        width: 409px;
+        height: 203px;
+    }
+    #legenda {
+        padding-left: 1em;
+    }
+    #baixo {
+        padding: 50px 0 50px 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    ul,ol {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1000px){
+    #cima {
+        flex-direction: row;
+        height: 23em;
+    }
+    #baixo {
+        height: fit-content;
+    }
+    .pamonha {
+        width: 409px;
+        height: 293px;
+    }
+    #legenda {
+        padding-left: 1em;
+    }
+    #baixo {
+        padding: 74px 0 72px 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    ul,ol {
+        font-size: 20px;
+    }
+}

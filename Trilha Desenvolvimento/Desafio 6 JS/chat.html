@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bate-Papo</title>
+    <link href="chat.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="topoChat">
+        <img src="fotos/Foto.png" alt="foto da pessoa" id="foto">
+        <div id="nomeStatus">
+            <span id="nome">Cecilia Sassaki</span>
+            <p></p>
+            <span id="status"><img src="fotos/Ellipse 1.png" alt="simbiloOnline">Online</span>
+        </div>
+        <img id="fechar" src="fotos/fechar.png" alt="simbolo para fechar o Bate-Papo">
+    </header>
+    <p id="horarioBatePapo">Hoje 11:30</p>
+    <main id="lugarMensagens">
+        <section id="MensagensDela">
+            <p id="nomeHorario">Cecilia-11:30</p>
+            <div id="MensagemDela">
+                <span>Tive uma ideia incrível para um projeto!</span>
+            </div>
+        </section>
+        <section id="MensagensEu">
+            <p id="nomeHorario">Você-11:32</p>
+            <div id="MensagemMinha">
+                <span>Sério? Me conta mais</span>
+            </div>
+        </section>
+        <section id="MensagensDela">
+            <p id="nomeHorario">Cecilia-11:34</p>
+            <div id="MensagemDela">
+                <span>E se a gente fizesse um chat moderno e responsive em apenas uma semana?</span>
+            </div>
+        </section>
+        <section id="MensagensEu">
+            <p id="nomeHorario">Você-11:36</p>
+            <div id="MensagemMinha">
+                <span>#BoraCodar!</span>
+            </div>
+        </section>
+    </main>
+    <form id="DigitarMensagem">
+        <input type="text" placeholder="Digite sua mensagem" id="escreverMensagem">
+        <button id="enviar"><img id="imagemEnviar" src="fotos/Vector.png"></button>
+    </form>
+    <script src="chat.js"></script>
+</body>
+</html>

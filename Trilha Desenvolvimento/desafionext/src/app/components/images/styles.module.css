@@ -1,0 +1,23 @@
+.bigPacman{
+    width: fit-content;
+    max-width: 95vw;
+}
+
+.bigPacman:hover,.imagens:hover{
+    border: 5px solid rgba(250, 132, 0, 1)
+}
+
+.imagens{
+    width: 31vw;
+    padding-right: 6px;
+    margin-bottom: 5vh;
+}
+
+@media(min-width: 1101px){
+    .bigPacman{
+        width: 90vw;
+    }
+    .imagens{
+        width: 29.5vw;
+    }
+}

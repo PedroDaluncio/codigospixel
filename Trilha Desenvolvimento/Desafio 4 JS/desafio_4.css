@@ -1,0 +1,200 @@
+html,body {
+    margin: 0;
+    width: 374px;
+    height: 667px;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8fafc;
+    font-family: "Titillium Web",'Times New Roman', Times, serif;
+    width: inherit;
+    height: auto;
+    margin-left: 5px;
+}
+
+#imagem {
+    width: fit-content;
+    height: inherit;
+}
+
+#logo {
+    width: 159px;
+    height: 54px;
+}
+
+section{
+    width: inherit;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #1E293B;
+}
+
+p {
+    margin: 0;
+}
+
+#texto{
+    display: inline-block;
+    font-weight: normal;
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+input,label,#entrar {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    width: 365px;
+    background: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+#email:hover,#caixaSenha:hover{
+    border-color: #7C3AED;
+}
+
+#email:focus-visible,#caixaSenha:focus-within{
+    border-color: #7C3AED;
+}
+
+#email {
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    width: 340px;
+    height: 40px;
+    padding: 10px 12px;
+}
+
+#caixaSenha {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    width: 340px;
+    height: 40px;
+    padding: 10px 12px;
+}
+
+#ocultar {
+    border: none;
+    background: none;
+    padding: 0 20px 0 0;
+}
+
+#ajustarSenhas {
+    display:flex ;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#esqueceu {
+    color: #7C3AED;
+}
+
+#entrar{
+    margin-top: 25px;
+    background-color: #7C3AED;
+    color: #FFFFFF;
+    height: 40px;
+    padding: 10px 24px;
+    border-radius: 4px;
+}
+
+#cadastrar,#inscrever {
+    font-weight: 300;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+#inscrever{
+    color: #7C3AED;
+}
+
+@media (min-width: 380px) and (max-width: 500px){
+    html,body{
+        width: 500px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #texto,#cadastrar,#inscrever {
+        font-size: 20px;
+    }
+    input,label,#entrar{
+        font-size: 18px;
+        width: 475px;
+    }
+    #email,#caixaSenha{
+        width: 450px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 900px){
+    html,body{
+        width: 700px;
+        height: fit-content;
+    }
+    h1{
+        text-align: center;
+        font-size: 35px;
+    }
+    #texto,#cadastrar,#inscrever {
+        font-size: 20px;
+    }
+    input,label,#entrar{
+        font-size: 18px;
+        width: 675px;
+    }
+    #email,#caixaSenha{
+        width: 650px;
+    }
+    #imagem {
+        width: 700px;
+    }
+}
+
+@media (min-width: 900px){
+    html,body{
+        height: 900px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    main{
+        margin-left: 119px;
+    }
+    h1{
+        margin-top: 150px;
+        font-size: 36px;
+    }
+    #texto,#cadastrar,#inscrever {
+        font-size: 16px;
+        width: 351px;
+    }
+    input,label,#entrar{
+        font-size: 16px;
+        width: 410px;
+    }
+    #email,#caixaSenha{
+        width: 384px;
+    }
+    #imagem {
+        width: 45%;
+    }
+    #logo {
+        transform: translateY(40px);
+    }
+    #ajustarSenhas {
+        margin-top: 20px
+    }
+}

@@ -1,0 +1,10 @@
+.pacman{
+    text-align: center;
+    color: rgba(250, 132, 0, 1);
+}
+
+.foto{
+    width: 90vw;
+    max-width: 90vw;
+    margin-bottom: 20px;
+}
